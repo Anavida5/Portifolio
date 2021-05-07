@@ -1,0 +1,289 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #030303;
+}
+h1, h2, h3 {
+    font-family: Asapo, sans-serif;
+    color: #000000;
+}
+
+.botao {
+    color:#080808;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color:rgb(233, 157, 157);
+    font-size: .9em;
+    border: 3px;
+
+}
+
+/*navegacao */
+
+nav {
+    
+    display: flex;    
+    flex-direction: column;
+    border-radius: 39%;    
+    align-items: center;
+    background-color: #e0f0f5;
+
+}
+nav > a {
+    text-decoration: none;
+    color:#080505;
+    font-weight:800;
+    font-size: 32px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;    
+    width:100%;
+}
+
+nav ul li {   
+    text-align: center;
+    width: 100%;
+
+}
+nav ul li a {     
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration:none;            
+    color:#000000    
+}
+
+/*cabeçario*/
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#000000;
+    text-align: center;
+    padding: 20px;
+    
+
+}
+
+header h1 {
+    color:#FFFFFF;
+
+}
+
+header p {
+    margin-bottom: 2em;
+
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px2 20px 20px;
+    background-color: #d3e8ee;
+    color:#000000;
+
+}
+#sobre h2 {
+    color:#000000;
+
+}
+#sobre p {
+    margin-bottom: 2.5em;
+    max-width:1000px;
+
+}
+#sobre.botao {
+    background-color: #f1f1f1;
+    color:#1c1c1c;
+}
+/*cursos*/
+
+
+#cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+
+}
+
+
+#cursos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+/*fotos */
+
+#fotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+
+}
+#fotos h2 {
+    margin-bottom: 20px;
+
+}
+#fotos img {
+    width: 100%
+}
+
+/*contato*/
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+
+}
+
+#contato h2 {
+    color:#000000
+}
+/* footer*/
+
+#footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #5ac4df;
+    color:#FFFFFF;
+
+}
+footer a {
+    font-size: medium;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: white;
+    color:rgb(0, 0, 0)
+    
+       
+      
+
+}
+
+.social-media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;       
+    
+} 
+      
+.social-media a {
+    padding: 1rem 1rem;
+    border: 5px solid #f7a4de;
+    min-width: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+a:hover {
+
+ @media screen and (min-width:768px) { 
+            /*nav*/
+
+            nav {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+           nav ul {
+            flex-direction: row;
+            width:70%
+           }
+
+   /* cabeçalho */
+   
+   header {
+       height: 600px;
+       height: 60vh;
+       justify-content: center;
+   }
+
+
+     /* sobre */
+
+    #sobre {
+        height: 250px;
+        height:30vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+
+      /* cursos* */
+
+      #cursos {
+       flex-direction: row;
+       flex-wrap: wrap;
+       align-items: flex-start;
+       max-width: 1000px;
+       margin:0 auto;
+    }
+
+      /* h2*/
+
+      #cursos h2 {
+        text-align: center;
+        width: 100%;
+    }
+      #cursos div {
+     flex-grow: 1;
+     flex-basis: 150px;
+     padding: 0 10px;
+
+}
+
+   /* fotos */
+
+   #fotos {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+   #fotos h2 {
+    width: 100%;
+    text-align: center;
+
+}
+
+   #fotos img {
+    width: 33.3333333%;
+}
+
+   #contato {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 500px;
+    margin:0 auto;
+}
+
+   #contato h2,  #contato p{
+    width: 100%;
+}
+ 
+ }
+
+}
